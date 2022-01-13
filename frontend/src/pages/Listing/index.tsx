@@ -1,13 +1,28 @@
-import MovieScore from "components/MovieScore";
-import MovieStars from "components/MovieStars";
+import MovieCard from "components/MovieCard";
 import Pagination from "components/Pagination";
 
 function Listing() {
     return(
       <>
         <Pagination/>
-        <MovieStars/>
-        <MovieScore/>
+        <div className="container">
+          <div className="row">
+
+            <div className="col">
+              <MovieCard /> 
+            </div>
+            <div className="col">
+              <MovieCard /> 
+            </div>
+            <div className="col">
+              <MovieCard /> 
+            </div>
+            <div className="col">
+              <MovieCard /> 
+            </div>
+
+          </div>
+        </div>
       </>
     );
 }
